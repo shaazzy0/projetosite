@@ -1,12 +1,31 @@
-<!-- ======= Hero Section ======= -->
+<?php    
+
+$puxardados = listarTodosRegistros('banner', 'idbanner, imgbanner, titulo, descricao, video, cadastro, alteracao, ativo','A');
+
+if($puxardados=='Vazio'){
+  echo '<h6 class="text-center mt-5 p-3 bg-danger text-white" > Nenhum Registro no banco de dados </h6>';
+}else{
+  foreach($puxardados as $itemretornolista){
+    $idbanner = $itemretornolista->idbanner;
+    $imgbanner = $itemretornolista ->imgbanner;
+    $titulo = $itemretornolista ->titulo;
+    $descricao = $itemretornolista ->descricao;
+    $video = $itemretornolista ->video;
+    $cadastro = $itemretornolista ->cadastro;
+    $alteracao = $itemretornolista ->alteracao;
+    $ativo = $itemretornolista ->ativo;
+  }
+
+}
+?>
 <section id="hero" class="hero d-flex align-items-center section-bg">
     <div class="container">
       <div class="row justify-content-between gy-5">
         <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <h2 data-aos="fade-up">Aproveite sua saúde,<br>Comidas Deliciosas</h2>
-          <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+          <h2 data-aos="fade-up"><?php echo$titulo?><br>Comidas Deliciosas</h2>
+          <p data-aos="fade-up" data-aos-delay="100"><?php echo$descricao?></p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#book-a-table" class="btn-book-a-table">Reservar uma mesa</a>
+            <a href="#book-a-table" class="btn-book-a-table"><?php echo$idbanner?></a>
             <a href="https://www.youtube.com/watch?v=WZIGwN-5Ioo" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Assistir Video</span></a>
           </div>
         </div>
@@ -16,3 +35,7 @@
       </div>
     </div>
   </section><!-- End Hero Section -->
+
+
+
+

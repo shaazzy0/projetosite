@@ -8,7 +8,7 @@
         </div>
 
         <div class="mb-3">
-          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+          <iframe style="border:0; width: 100%; height: 350px;" src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.48883516443!2d-41.996031123852184!3d-18.909744907352902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb1a8ce9a671637%3A0x8487595ee3bee6df!2sR.%20Virgolandia%2C%20371%20-%20Santa%20Rita%2C%20Gov.%20Valadares%20-%20MG%2C%2035040-550!5e0!3m2!1spt-BR!2sbr!4v1685570811471!5m2!1spt-BR!2sbr"></iframe>" frameborder="0" allowfullscreen></iframe>
         </div><!-- End Google Maps -->
 
         <div class="row gy-4">

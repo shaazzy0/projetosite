@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -35,6 +36,22 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+
+  
+
+<?php include_once 'config/constantes.php'?>
+<?php include_once 'config/conexao.php'?>
+<?php include_once 'func/funcoes.php'?>
+
+
+
+
+
+
+
+
+
 </head>
 
 <body>
@@ -45,7 +62,8 @@
 
   <main id="main">
 
-     <?php include_once 'sobrenos.php' ?>
+  
+    <?php include_once 'sobrenos.php' ?>
 
     <?php  include_once 'squares.php' ?>
     
