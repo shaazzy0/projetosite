@@ -1,38 +1,61 @@
+<?php    
+
+$puxardados = listarTodosRegistros('sobrenos', ' idsobrenos, titulo, imagem, contato, descricao, video, cadastro, alteracao, ativo, nomecontato, imagemvideo','A');
+
+if($puxardados=='Vazio'){
+  echo '<h6 class="text-center mt-5 p-3 bg-danger text-white" > Nenhum Registro no banco de dados </h6>';
+}else{
+  foreach($puxardados as $itemretornolista){
+    $idsobrenos = $itemretornolista->idsobrenos;
+    $imagem = $itemretornolista ->imagem;
+    $titulo = $itemretornolista ->titulo;
+    $descricao = $itemretornolista ->descricao;
+    $video = $itemretornolista ->video;
+    $cadastro = $itemretornolista ->cadastro;
+    $alteracao = $itemretornolista ->alteracao;
+    $ativo = $itemretornolista ->ativo;
+    $nomecontato = $itemretornolista ->nomecontato;
+    $contato = $itemretornolista ->contato;
+    $imagemvideo = $itemretornolista ->$imagemvideo;
+  }
+
+}
+
+?>
+
 <!-- ======= About Section ======= -->
 <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
           <h2>Sobre Nós</h2>
-          <p>Aprenda mais <span>sobre nós</span></p>
+          <p><?php echo$titulo?></p>
         </div>
 
         <div class="row gy-4">
           <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/about.jpg) ;" data-aos="fade-up" data-aos-delay="150">
             <div class="call-us position-absolute">
-              <h4>Reserve uma mesa</h4>
-              <p>+55 33 99826-2566</p>
+              <h4><?php echo$nomecontato ?></h4>
+              <p><?php echo$contato ?></p>
             </div>
           </div>
           <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
             <div class="content ps-0 ps-lg-5">
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+               <?php echo$descricao ?>
               </p>
               <ul>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                <li><i class="bi bi-check2-all"></i>   <?php echo$descricao ?></li>
+                <li><i class="bi bi-check2-all"></i>   <?php echo$descricao ?></li>
+                <li><i class="bi bi-check2-all"></i>   <?php echo$descricao ?></li>
               </ul>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+              <?php echo$descricao ?>
               </p>
-
+                  <br><br>
               <div class="position-relative mt-4">
-                <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
-                <a href="https://www.youtube.com/watch?v=WZIGwN-5Ioo" class="glightbox play-btn"></a>
+                <img src="<?php echo$imagemvideo ?>" class="img-fluid" alt="">
+                <a href="<?php echo$video ?>" class="glightbox play-btn"></a>
               </div>
             </div>
           </div>

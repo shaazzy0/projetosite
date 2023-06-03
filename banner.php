@@ -14,6 +14,7 @@ if($puxardados=='Vazio'){
     $cadastro = $itemretornolista ->cadastro;
     $alteracao = $itemretornolista ->alteracao;
     $ativo = $itemretornolista ->ativo;
+    
   }
 
 }
@@ -22,15 +23,15 @@ if($puxardados=='Vazio'){
     <div class="container">
       <div class="row justify-content-between gy-5">
         <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <h2 data-aos="fade-up"><?php echo$titulo?><br>Comidas Deliciosas</h2>
+          <h2 data-aos="fade-up"><?php echo$titulo?></h2>
           <p data-aos="fade-up" data-aos-delay="100"><?php echo$descricao?></p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#book-a-table" class="btn-book-a-table"><?php echo$idbanner?></a>
-            <a href="https://www.youtube.com/watch?v=WZIGwN-5Ioo" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Assistir Video</span></a>
+            <a href="#book-a-table" class="btn-book-a-table">Reservar Mesa</a>
+            <a href="<?php echo$video ?>" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Assistir Video</span></a>
           </div>
         </div>
         <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
-          <img src="assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+          <img src="<?php echo$imgbanner ?>" class="img-fluid rounded-circle" alt="" data-aos="zoom-out" data-aos-delay="300">
         </div>
       </div>
     </div>
