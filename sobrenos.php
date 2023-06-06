@@ -16,7 +16,7 @@ if($puxardados=='Vazio'){
     $ativo = $itemretornolista ->ativo;
     $nomecontato = $itemretornolista ->nomecontato;
     $contato = $itemretornolista ->contato;
-    $imagemvideo = $itemretornolista ->$imagemvideo;
+    $imagemvideo = $itemretornolista ->imagemvideo;
   }
 
 }
@@ -54,7 +54,7 @@ if($puxardados=='Vazio'){
               </p>
                   <br><br>
               <div class="position-relative mt-4">
-                <img src="<?php echo$imagemvideo ?>" class="img-fluid" alt="">
+                <img src="<?php echo$imagemvideo ?>" class="img-fluid"  alt="">
                 <a href="<?php echo$video ?>" class="glightbox play-btn"></a>
               </div>
             </div>
